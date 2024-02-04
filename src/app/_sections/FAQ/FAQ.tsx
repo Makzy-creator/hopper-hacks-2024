@@ -11,10 +11,10 @@ const FAQ: React.FC = () => {
           {section.map((value: { question: string, answer: string }, idx: string | number) => (
             <AccordionItem key={idx} value={`question-set-${idx}`}>
               <AccordionTrigger>
-                <h3 className="text-lg font-semibold">{value.question}</h3>
+                <h3 className="text-lg text-dark font-semibold">{value.question}</h3>
               </AccordionTrigger>
               <AccordionContent>
-                <p className="text-sm">{value.answer}</p>
+                <p className="text-sm text-dark">{value.answer}</p>
               </AccordionContent>
             </AccordionItem>
           ))}
